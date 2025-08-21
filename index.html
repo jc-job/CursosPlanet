@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Academia Digital - Formaciones Online</title>
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">🎓 Academia Digital</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#libros">Libros</a></li>
+                  <!--  <li><a href="#contacto">Contacto</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container fade-in-up">
+            <h1>Aprende Sin Límites</h1>
+            <p>Descubre cursos online y libros digitales que transformarán tu carrera profesional</p>
+            <a href="#cursos" class="cta-button">Explorar Cursos</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title fade-in-up">¿Por Qué Elegirnos?</h2>
+            <div class="features-grid">
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Contenido Especializado</h3>
+                    <p>Cursos diseñados por expertos de la industria con contenido actualizado y práctico.</p>
+                </div>
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">⏰</div>
+                    <h3>Aprende a Tu Ritmo</h3>
+                    <p>Acceso 24/7 a todo el contenido. Estudia cuando y donde quieras.</p>
+                </div>
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Certificaciones</h3>
+                    <p>Obtén certificados reconocidos que validarán tus nuevas habilidades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="cursos" class="products">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Nuestros Productos</h2>
+            <div class="products-grid">
+                <div class="product-card fade-in-up">
+                    <h3>📚 Cursos Online</h3>
+                    <div class="price">Desde $49</div>
+                    <ul class="product-features">
+                        <li>Animales</li>
+                        <li>Articulos infantiles</li>
+                        <li>Deportes y fitness</li>
+                        <li>Diseño</li>
+                        <li>Y mucho más</li>
+                    </ul>
+                    <a href="./pag/cursos.html" class="buy-button" onclick="showPurchaseForm('curso')">Ver Cursos</a>
+                </div>
+                
+                <div class="product-card fade-in-up">
+                    <h3>📖 Libros Digitales</h3>
+                    <div class="price">Desde $19</div>
+                    <ul class="product-features">
+                        <li>Formato PDF y EPUB</li>
+                        <li>Contenido descargable</li>
+                        <li>Actualizaciones gratuitas</li>
+                        <li>Bonus exclusivos</li>
+                        <li>Soporte técnico</li>
+                    </ul>
+                    <a href="#" class="buy-button" onclick="showPurchaseForm('libro')">Ver Libros</a>
+                </div>
+                
+                <div class="product-card fade-in-up">
+                    <h3>🎯 Pack Completo</h3>
+                    <div class="price">$97</div>
+                    <ul class="product-features">
+                        <li>Acceso a todos los cursos</li>
+                        <li>Biblioteca completa de libros</li>
+                        <li>Mentoría personalizada</li>
+                        <li>Comunidad privada</li>
+                        <li>Descuentos en futuros lanzamientos</li>
+                    </ul>
+                    <a href="#" class="buy-button" onclick="showPurchaseForm('pack')">Obtener Pack</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section 
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item fade-in-up">
+                    <div class="stat-number" id="students">5,000+</div>
+                    <div class="stat-label">Estudiantes Activos</div>
+                </div>
+                <div class="stat-item fade-in-up">
+                    <div class="stat-number" id="courses">150+</div>
+                    <div class="stat-label">Cursos Disponibles</div>
+                </div>
+                <div class="stat-item fade-in-up">
+                    <div class="stat-number" id="books">50+</div>
+                    <div class="stat-label">Libros Publicados</div>
+                </div>
+                <div class="stat-item fade-in-up">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Satisfacción</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- Contact Section  
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Contáctanos</h2>
+            <form class="contact-form fade-in-up" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Nombre Completo</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Asunto</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+    -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Academia Digital</h3>
+                    <p>Tu plataforma de confianza para el aprendizaje 100% online</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <a href="#inicio">Inicio</a>
+                    <a href="#cursos">Cursos</a>
+                    <a href="#libros">Libros</a>
+                    <!-- <a href="#contacto">Contacto</a> -->
+                </div>
+                <div class="footer-section">
+                    <h3>Soporte</h3>
+
+                    <a href="#">Términos de Servicio</a>
+                    <a href="#">Política de Privacidad</a>
+
+                </div>
+
+            </div>
+            <p>&copy; 2025 Academia Digital. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in-up elements
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.8s ease-out';
+            observer.observe(el);
+        });
+
+        // Counter animation for stats
+        function animateCounter(element, start, end, duration) {
+            let startTime = null;
+            
+            function animation(currentTime) {
+                if (startTime === null) startTime = currentTime;
+                const timeElapsed = currentTime - startTime;
+                const run = ease(timeElapsed, start, end - start, duration);
+                element.textContent = Math.floor(run).toLocaleString() + '+';
+                if (timeElapsed < duration) requestAnimationFrame(animation);
+            }
+            
+            function ease(t, b, c, d) {
+                t /= d / 2;
+                if (t < 1) return c / 2 * t * t + b;
+                t--;
+                return -c / 2 * (t * (t - 2) - 1) + b;
+            }
+            
+            requestAnimationFrame(animation);
+        }
+
+        // Trigger counter animation when stats section is visible
+        const statsSection = document.querySelector('.stats');
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const studentsEl = document.getElementById('students');
+                    const coursesEl = document.getElementById('courses');
+                    const booksEl = document.getElementById('books');
+                    
+                    setTimeout(() => animateCounter(studentsEl, 0, 5000, 2000), 200);
+                    setTimeout(() => animateCounter(coursesEl, 0, 150, 1500), 400);
+                    setTimeout(() => animateCounter(booksEl, 0, 50, 1000), 600);
+                    
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        });
+        
+        statsObserver.observe(statsSection);
+
+        // Form submission
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+            
+            // Simulate form submission
+            event.target.innerHTML = `
+                <div style="text-align: center; padding: 2rem; background: linear-gradient(45deg, #4ade80, #22c55e); border-radius: 15px; color: white;">
+                    <h3>¡Mensaje Enviado!</h3>
+                    <p>Gracias por contactarnos. Te responderemos pronto.</p>
+                </div>
+            `;
+            
+            // Reset after 3 seconds (in real implementation, this would be handled by the server)
+            setTimeout(() => {
+                location.reload();
+            }, 3000);
+        }
+
+        /*
+        // Purchase form simulation
+        function showPurchaseForm(productType) {
+            const productNames = {
+                curso: 'Curso Online',
+                libro: 'Libro Digital',
+                pack: 'Pack Completo'
+            };
+            
+            const prices = {
+                curso: '$49',
+                libro: '$19',
+                pack: '$97'
+            };
+            
+            alert(`¡Perfecto! Seleccionaste: ${productNames[productType]} - ${prices[productType]}\n\nEn una implementación real, esto te llevaría a una pasarela de pago segura como Stripe, PayPal o MercadoPago.`);
+        }
+            */
+
+        // Add some interactive effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effect to cards
+            const cards = document.querySelectorAll('.feature-card, .product-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px) scale(1.02)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
